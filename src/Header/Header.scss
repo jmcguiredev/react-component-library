@@ -1,0 +1,13 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+@import "../mixins.scss";
+
+.jm-header {
+  @include font-defaults;
+  background-color: rgb(154, 218, 255);
+}
+
+.jm-nav-li {
+  @include clean-ul;
+}
