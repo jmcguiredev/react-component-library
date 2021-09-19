@@ -5,28 +5,9 @@ import { render } from "@testing-library/react";
 import Header from "./Header";
 import { HeaderProps } from "./Header.types";
 
-describe("Test Component", () => {
-  let props: HeaderProps;
-
-  beforeEach(() => {
-    props = {
-      links: [
-        {
-          title: "Google",
-          link: "https://google.com/"
-        },
-        {
-          title: "Facebook",
-          link: "https://facebook.com/"
-        }
-      ]
-    };
-  });
-
-  const renderComponent = () => render(<Header {...props} />);
-
-  it("should render foo text correctly", () => {
-    props.links = [
+describe("Header component", () => {
+  let props: HeaderProps = {
+    links: [
       {
         title: "Google",
         link: "https://google.com/"
@@ -35,11 +16,21 @@ describe("Test Component", () => {
         title: "Facebook",
         link: "https://facebook.com/"
       }
-    ];
+    ]
+  };
+
+
+  const renderComponent = () => render(<Header {...props} />);
+
+  it("should render link elements", () => {
+    
     const { getByTestId } = renderComponent();
 
-    const component = getByTestId("Header");
+    // Checks that all link elements were created
+    props.links.forEach((link) => {
+      expect(getByTestId(`link-a-${props.links.indexOf(link)}`)).not.toBe(null);
+    });
 
-    expect(component).toHaveTextContent("harvey was here");
+
   });
 });
