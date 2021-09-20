@@ -5,5 +5,6 @@ interface LinkObject {
 }
 
 export interface HeaderProps {
-    links: Array<LinkObject>
+    links: Array<LinkObject>;
+    justify?: string;
 }

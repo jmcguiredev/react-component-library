@@ -6,8 +6,15 @@
 .jm-header {
   @include font-defaults;
   background-color: rgb(154, 218, 255);
+  height: 3rem;
 }
 
-.jm-nav-li {
-  @include clean-ul;
+.jm-header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.jm-nav-a {
+  @include clean-link;
+  padding: 1rem;
 }
