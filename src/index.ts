@@ -1,3 +1,3 @@
-import TestComponent from "./TestComponent";
+import Header from "./Header";
 
-export { TestComponent };
+export { Header };
