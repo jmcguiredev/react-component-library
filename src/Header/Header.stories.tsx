@@ -17,6 +17,7 @@ export const GFB = () => <Header links={[
     }
   ]}
   justify="flex-start"
-  theme="dark"/>;
+  theme="dark"
+  fontSize={1.25}/>;
 
 

@@ -5,10 +5,17 @@ import "./Header.scss";
 
 
 
-const Header: React.FC<HeaderProps> = ({ links, justify, theme }) => (
+const Header: React.FC<HeaderProps> = ({ links, justify, theme, fontSize }) => (
     <header data-testid="Header" className={`${theme ? theme : 'light'}-bg`}>
         <nav style={{ justifyContent: justify }} data-testid="header-nav" className="jm-header-nav">
-        {links.map((link) => <a data-testid={`link-a-${links.indexOf(link)}`} className="jm-nav-a" key={link.link} href={link.link}>{link.title}</a>)}
+        {links.map((link) => <a 
+        data-testid={`link-a-${links.indexOf(link)}`} 
+        className="jm-nav-a" 
+        key={link.link} 
+        href={link.link}
+        style={{ fontSize: `${fontSize ? fontSize : 1}rem`}}>
+            {link.title}
+            </a>)}
         </nav>
     </header>
 );

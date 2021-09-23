@@ -8,4 +8,5 @@ export interface HeaderProps {
     links: Array<LinkObject>;
     justify?: string;
     theme?: string;
+    fontSize?: number;
 }
