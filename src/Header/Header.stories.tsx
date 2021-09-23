@@ -6,18 +6,25 @@ export default {
     title: "Header"
 };
 
-export const GFB = () => <Header links={[
-    {
-      title: "Google",
-      link: "https://google.com/"
-    },
-    {
-      title: "Facebook",
-      link: "https://facebook.com/"
-    }
-  ]}
+let links = [
+  {
+    title: "Google",
+    link: "https://google.com/"
+  },
+  {
+    title: "Facebook",
+    link: "https://facebook.com/"
+  }
+]
+
+export const LeftDark = () => <Header links={links}
   justify="flex-start"
   theme="dark"
-  fontSize={1.25}/>;
+  fontSize={1.1}/>;
+
+  export const RightLight = () => <Header links={links}
+  justify="flex-end"
+  theme="light"
+  fontSize={1}/>;
 
 

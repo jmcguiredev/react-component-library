@@ -5,6 +5,18 @@ $font-family: 'Open Sans', sans-serif;
   font-family: $font-family;
 }
 
+.dark-font {
+  &:hover {
+    color: $jm-turqoise-darkmode;
+  }
+}
+
+.light-font {
+  &:hover {
+    color: $jm-turqoise-lightmode;
+  }
+}
+
 @mixin heading {
   @include font-defaults;
 

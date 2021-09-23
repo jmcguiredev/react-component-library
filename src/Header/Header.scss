@@ -23,7 +23,6 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0);
   transition: 0.33s;
   &:hover {
-    color: $jm-turqoise;
-    border-bottom: 2px solid turquoise;
+    border-bottom: 2px solid $jm-turqoise-lightmode;
   }
 }
