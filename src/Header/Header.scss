@@ -19,6 +19,7 @@
   @include clean-link;
   padding: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.33s;
   &:hover {
     color: $jm-turqoise;
   }
