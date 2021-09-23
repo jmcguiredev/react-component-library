@@ -5,7 +5,6 @@
 
 .jm-header {
   @include font-defaults;
-  background-color: rgb(154, 218, 255);
   height: 3rem;
 }
 
@@ -20,4 +19,7 @@
   @include clean-link;
   padding: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  &:hover {
+    color: $jm-turqoise;
+  }
 }
