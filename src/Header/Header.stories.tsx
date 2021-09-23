@@ -20,11 +20,11 @@ let links = [
 export const LeftDark = () => <Header links={links}
   justify="flex-start"
   theme="dark"
-  fontSize={1.1}/>;
+  fontSize={1.5}/>;
 
   export const RightLight = () => <Header links={links}
-  justify="flex-end"
+  justify="flex-start"
   theme="light"
-  fontSize={1}/>;
+  fontSize={1.5}/>;
 
 
