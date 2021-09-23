@@ -26,10 +26,15 @@ describe("Header component", () => {
     
     const { getByTestId } = renderComponent();
 
-    // Checks that all link elements were created
-    props.links.forEach((link) => {
-      expect(getByTestId(`link-a-${props.links.indexOf(link)}`)).not.toBe(null);
-    });
+    
+  
+    let nav = getByTestId('header-nav');
+    
+    // Checks that all link elements were created and their text content matches the title property 
+    for (let i = 0; i < nav.children.length; i++) {
+      console.log(nav.children[i].textContent);
+      expect(nav.children[i].textContent).toBe(props.links[i].title);
+    }
 
 
   });
