@@ -17,10 +17,13 @@
 
 .jm-nav-a {
   @include clean-link;
-  padding: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  @include font-defaults;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
   transition: 0.33s;
   &:hover {
     color: $jm-turqoise;
+    border-bottom: 2px solid turquoise;
   }
 }
