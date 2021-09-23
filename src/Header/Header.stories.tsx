@@ -16,6 +16,7 @@ export const GFB = () => <Header links={[
       link: "https://facebook.com/"
     }
   ]}
-  justify="flex-start"/>;
+  justify="flex-start"
+  theme="dark"/>;
 
 

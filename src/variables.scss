@@ -1,18 +1,29 @@
 // Variables
-$harvey-black: #131111;
-$harvey-white: #e0e0e0;
-$harvey-red: #ff2323;
-$harvey-green: #005f20;
-$harvey-blue: #070bce;
+// https://coolors.co/333333-48e5c2-fcfaf9-f3d3bd-5e5e5e
+$jm-black: #333333;
+$jm-white: #FCFAF9;
+$jm-silk: #F3D3BD;
+$jm-grey: #5E5E5E;
+$jm-turqoise: #48E5C2;
 
 :root {
-  --background: #fff;
-  --font-color: #494949;
+  --background: $jm-white;
+  --font-color: $jm-grey;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #3c3c3c;
-    --font-color: #fafafa;
+    --background: $jm-grey;
+    --font-color: $jm-white;
   }
+}
+
+.dark-bg {
+  background-color: $jm-black;
+  color: $jm-white;
+}
+
+.light-bg {
+  background-color: $jm-white;
+  color: $jm-black;
 }

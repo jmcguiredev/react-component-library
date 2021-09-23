@@ -5,8 +5,8 @@ import "./Header.scss";
 
 
 
-const Header: React.FC<HeaderProps> = ({ links, justify }) => (
-    <header data-testid="Header" className="jm-header">
+const Header: React.FC<HeaderProps> = ({ links, justify, theme }) => (
+    <header data-testid="Header" className={`${theme ? theme : 'light'}-bg`}>
         <nav style={{ justifyContent: justify }} data-testid="header-nav" className="jm-header-nav">
         {links.map((link) => <a data-testid={`link-a-${links.indexOf(link)}`} className="jm-nav-a" key={link.link} href={link.link}>{link.title}</a>)}
         </nav>

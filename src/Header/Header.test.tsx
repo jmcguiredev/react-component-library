@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { render } from "@testing-library/react";
-
 import Header from "./Header";
 import { HeaderProps } from "./Header.types";
 
