@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ links, justify, theme, fontSize }) => (
         className={`jm-nav-a ${theme}-font`} 
         key={link.link} 
         href={link.link}
-        style={{ fontSize: `${fontSize ? fontSize : 1}rem`}}>
+        style={{ fontSize: `${fontSize ? fontSize : 1}rem`, borderColor: `jm-turqoise-${theme}mode`}}>
             {link.title}
             </a>)}
         </nav>

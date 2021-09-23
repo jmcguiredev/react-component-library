@@ -20,9 +20,9 @@
   @include font-defaults;
   padding: 0.5rem;
   margin: 0.5rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 0.1rem solid transparent;
   transition: 0.33s;
   &:hover {
-    border-bottom: 2px solid $jm-turqoise-lightmode;
+    border-bottom: 0.1rem solid;
   }
 }
