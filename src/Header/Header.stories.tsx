@@ -18,13 +18,15 @@ let links = [
 ]
 
 export const LeftDark = () => <Header links={links}
-  justify="flex-start"
+  position="center"
   theme="dark"
-  fontSize={1.5}/>;
+  fontSize={1.5}
+  underlineAnimationStart="center"/>;
 
   export const RightLight = () => <Header links={links}
-  justify="flex-start"
+  position="right"
   theme="light"
-  fontSize={1.5}/>;
+  fontSize={1.5}
+  underlineAnimationStart="right"/>;
 
 
