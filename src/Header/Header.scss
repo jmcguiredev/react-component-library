@@ -1,9 +1,6 @@
-// Generated with util/create-component.js
 @import "../variables.scss";
 @import "../typography.scss";
 @import "../mixins.scss";
-
-
 
 
 .jm-header-nav {
@@ -12,42 +9,6 @@
   
 }
 
-.jm-nav-a {
-  @include clean-link;
-  @include font-defaults;
-  padding: 0.25rem;
-  // border-bottom: 0.2rem solid transparent;
-  transition: 0.33s;
-  text-align: center;
-}
-
-.jm-nav-a-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  margin: 0.5rem;
-}
-
-.jm-nav-a-underscore {
-  opacity: 0;
-  display: block;
-  height: 0.1rem;
-  width: 0%;
-  transition: 0.33s;
-}
-
-.underscore-dark {
-  background-color: $jm-turqoise-darkmode;
-}
-.underscore-light {
-  background-color: $jm-turqoise-lightmode;
-}
-
-.jm-nav-a:hover ~ .jm-nav-a-underscore {
-  opacity: 1;
-  width: 100%;
-}
 
 
 

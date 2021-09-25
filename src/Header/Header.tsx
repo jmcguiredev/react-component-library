@@ -1,6 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { HeaderProps } from "./Header.types";
+import Link from "../Link/Link";
 import "./Header.scss";
 
 function directionToJustification(direction) {
@@ -13,14 +14,14 @@ function directionToJustification(direction) {
       return "center";
   }
 }
+// Props:
+//   links
+//   position
+//   theme
+//   fontSize
+//   underlineAnimationStart
 
-const Header: React.FC<HeaderProps> = ({
-  links,
-  position,
-  theme,
-  fontSize,
-  underlineAnimationStart,
-}) => (
+const Header: React.FC<HeaderProps> = ({links, position, theme, fontSize, underlineAnimationStart}) => (
   <header data-testid="Header" className={`jm-header ${theme ? theme : "light"}-bg`}>
     <nav
       style={{
@@ -32,25 +33,13 @@ const Header: React.FC<HeaderProps> = ({
       className="jm-header-nav"
     >
       {links.map((link) => (
-        <div className="jm-nav-a-cont">
-          <a
-            data-testid={`link-a-${links.indexOf(link)}`}
-            className={`jm-nav-a ${theme}-font`}
-            key={link.link}
-            href={link.link}
-            style={{ fontSize: `${fontSize ? fontSize : 1}rem` }}
-          >
-            {link.title}
-          </a>
-          <span
-            className={`jm-nav-a-underscore underscore-${theme}`}
-            style={{
-              alignSelf: underlineAnimationStart
-                ? `${directionToJustification(underlineAnimationStart)}`
-                : "center",
-            }}
-          />
-        </div>
+        <Link 
+          title={link.title}
+          link={link.link}
+          theme={theme}
+          fontSize={fontSize}
+
+        />
       ))}
     </nav>
   </header>

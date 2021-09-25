@@ -7,7 +7,7 @@ interface LinkObject {
 export interface HeaderProps {
     links: Array<LinkObject>;
     position?: 'left' | 'right' | 'center';
-    theme?: string;
+    theme?: "dark" | "light";
     fontSize?: number;
     underlineAnimationStart?: 'left' | 'right' | 'center';
 }
