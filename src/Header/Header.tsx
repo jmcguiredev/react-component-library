@@ -2,24 +2,8 @@
 import React from "react";
 import { HeaderProps } from "./Header.types";
 import Link from "../Link/Link";
+import { directionToJustification } from "../services/convert";
 import "./Header.scss";
-
-function directionToJustification(direction) {
-  switch (direction) {
-    case "left":
-      return "flex-start";
-    case "right":
-      return "flex-end";
-    case "center":
-      return "center";
-  }
-}
-// Props:
-//   links
-//   position
-//   theme
-//   fontSize
-//   underlineAnimationStart
 
 const Header: React.FC<HeaderProps> = ({links, position, theme, fontSize, underlineAnimationStart}) => (
   <header data-testid="Header" className={`jm-header ${theme ? theme : "light"}-bg`}>
