@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({links, position, theme, fontSize, underl
           link={link.link}
           theme={theme}
           fontSize={fontSize}
-
+          underlineAnimationStart={underlineAnimationStart}
         />
       ))}
     </nav>

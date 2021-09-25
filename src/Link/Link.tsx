@@ -1,18 +1,7 @@
 import React from "react";
 import { LinkProps } from "./Link.types";
 import "./Link.scss";
-
-
-function directionToJustification(direction) {
-    switch (direction) {
-      case "left":
-        return "flex-start";
-      case "right":
-        return "flex-end";
-      case "center":
-        return "center";
-    }
-  }
+import { directionToJustification } from '../services/convert';
 
 const Link: React.FC<LinkProps> = ({ title, link, theme, fontSize, underlineAnimationStart }) => (
     <div className="jm-nav-a-cont">
