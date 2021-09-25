@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({
   fontSize,
   underlineAnimationStart,
 }) => (
-  <header data-testid="Header" className={`${theme ? theme : "light"}-bg`}>
+  <header data-testid="Header" className={`jm-header ${theme ? theme : "light"}-bg`}>
     <nav
       style={{
         justifyContent: position
