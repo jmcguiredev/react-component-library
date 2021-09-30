@@ -4,11 +4,10 @@ module.exports = (componentName) => ({
 @import "../variables.scss";
 @import "../typography.scss";
 
-.foo-bar {
-  @include font-defaults;
-
-  color: $harvey-green;
+.jm-${componentName} {
+  @include font-defaults
 }
+
 `,
   extension: `.scss`
 });
