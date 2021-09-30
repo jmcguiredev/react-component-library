@@ -1,5 +1,6 @@
 module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
+  content: `
+@import "../mixins.scss";
 @import "../variables.scss";
 @import "../typography.scss";
 
