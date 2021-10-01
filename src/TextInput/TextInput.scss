@@ -1,0 +1,9 @@
+
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../typography.scss";
+
+.jm-TextInput {
+  @include font-defaults
+}
+
