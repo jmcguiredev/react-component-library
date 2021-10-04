@@ -3,7 +3,11 @@
 @import "../variables.scss";
 @import "../typography.scss";
 
-.jm-TextInput {
-  @include font-defaults
+.jm-textinput {
+  @include font-defaults;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  width: auto;
+  min-width: 1.5rem;
 }
 
