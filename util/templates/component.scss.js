@@ -4,7 +4,7 @@ module.exports = (componentName) => ({
 @import "../variables.scss";
 @import "../typography.scss";
 
-.jm-${componentName} {
+.jm-${componentName.toLowerCase()} {
   @include font-defaults
 }
 
