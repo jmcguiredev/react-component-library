@@ -3,7 +3,7 @@ import React from "react";
 import { HeaderProps } from "./Header.types";
 import Link from "../Link/Link";
 import { directionToJustification } from "../services/convert";
-import "./Header.scss";
+import "./style.scss";
 
 const Header: React.FC<HeaderProps> = ({links, position, theme, fontSize, underlineAnimationStart}) => (
   <header data-testid="Header" className={`jm-header ${theme ? theme : "light"}-bg`}>

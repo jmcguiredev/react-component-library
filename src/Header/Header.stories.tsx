@@ -8,12 +8,16 @@ export default {
 
 let links = [
   {
+    title: "Home",
+    link: "#"
+  },
+  {
     title: "Google",
-    link: "https://google.com/"
+    link: "#"
   },
   {
     title: "Facebook",
-    link: "https://facebook.com/"
+    link: "#"
   }
 ]
 
