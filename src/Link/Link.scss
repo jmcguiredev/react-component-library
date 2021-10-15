@@ -4,13 +4,13 @@
 
 
 .jm-nav-a {
-    @include clean-link;
-    @include font-defaults;
-    padding: 0.25rem;
-    // border-bottom: 0.2rem solid transparent;
-    transition: 0.33s;
-    text-align: center;
-  }
+  @include clean-link;
+  @include font-defaults;
+  padding: 0.25rem;
+  // border-bottom: 0.2rem solid transparent;
+  transition: 0.33s;
+  text-align: center;
+}
   
   .jm-nav-a-cont {
     display: inline-flex;

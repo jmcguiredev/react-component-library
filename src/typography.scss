@@ -11,10 +11,18 @@ $font-family: 'Open Sans', sans-serif;
   }
 }
 
+.dark-font-selected {
+  color: $jm-turqoise-darkmode;
+}
+
 .light-font {
   &:hover {
     color: $jm-turqoise-lightmode;
   }
+}
+
+.light-font-selected {
+  color: $jm-turqoise-lightmode;
 }
 
 @mixin heading {

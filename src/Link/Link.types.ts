@@ -4,4 +4,7 @@ export interface LinkProps {
     theme?: "light" | "dark";
     fontSize?: number;
     underlineAnimationStart?: "right" | "left" | "center";
+    selected: string;
+    handleClick: (e: any) => void;
+    
 }
